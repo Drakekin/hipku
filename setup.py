@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='hipku',
-    version='1.0',
+    version='1.0.1',
     packages=['hipku'],
     url='https://github.com/Drakekin/hipku',
     license='MIT License',

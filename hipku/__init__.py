@@ -1,1 +1,1 @@
-from encoder import encode, decode
+from .encoder import encode, decode

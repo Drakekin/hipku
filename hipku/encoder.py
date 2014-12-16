@@ -1,8 +1,14 @@
 from __future__ import division
 from ipaddress import ip_address
 from math import log, ceil
-from dictionaries import ipv4_key, ipv6_key, ipv4_schema, ipv6_schema, animal_adjectives, animal_colours, animal_nouns, \
-    animal_verbs, nature_adjectives, nature_nouns, plant_nouns, plant_verbs
+from hipku.dictionaries import (
+    ipv4_key, ipv6_key,
+    ipv4_schema, ipv6_schema,
+    animal_adjectives, animal_colours,
+    animal_nouns, animal_verbs,
+    nature_adjectives, nature_nouns,
+    plant_nouns, plant_verbs
+)
 from re import sub
 
 
