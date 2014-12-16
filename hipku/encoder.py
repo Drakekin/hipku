@@ -70,7 +70,11 @@ def decode(haiku):
     haiku = sub(r"[^a-z \n]", "", haiku.lower()).split()
     haiku = [h for h in haiku if h]
 
+    # TODO: Add some error handling
     if haiku[0] == "the":  # IPv4
+        # This section is awful primarily because the final line
+        # can either be four or five words and is a single octlet.
+        # Therefore, this monstrosity.
         haiku.pop(0)  # consume "the"
         animal_adjective = haiku.pop(0)
         animal_colour = haiku.pop(0)
